@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Presse &amp; Reconnaissance &mdash; Chuck Ealy</title>
+  <meta name="description" content="Couverture m&eacute;diatique, t&eacute;moignages, prix et validation externe du leadership, de l'excellence op&eacute;rationnelle et de l'impact strat&eacute;gique de Chuck Ealy.">
+  <meta name="keywords" content="Chuck Ealy, presse, m&eacute;dias, reconnaissance, t&eacute;moignages, prix, leadership, dirigeant">
+  <meta name="author" content="Chuck Ealy">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Presse &amp; Reconnaissance &mdash; Chuck Ealy">
+  <meta property="og:description" content="Couverture m&eacute;diatique, t&eacute;moignages, prix et validation externe du leadership et de l'impact strat&eacute;gique de Chuck Ealy.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chuckealy.com/fr/press.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Presse &amp; Reconnaissance &mdash; Chuck Ealy">
+  <meta name="twitter:description" content="Couverture m&eacute;diatique, t&eacute;moignages, prix et validation externe du leadership et de l'impact strat&eacute;gique de Chuck Ealy.">
+
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://chuckealy.com/fr/press.html">
+  <link rel="alternate" hreflang="en" href="https://chuckealy.com/press.html">
+  <link rel="alternate" hreflang="es" href="https://chuckealy.com/es/press.html">
+  <link rel="alternate" hreflang="fr" href="https://chuckealy.com/fr/press.html">
+  <link rel="alternate" hreflang="x-default" href="https://chuckealy.com/press.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Presse & Reconnaissance \u2014 Chuck Ealy",
+    "description": "Couverture m\u00e9diatique, t\u00e9moignages, prix et validation externe du leadership, de l'excellence op\u00e9rationnelle et de l'impact strat\u00e9gique de Chuck Ealy.",
+    "url": "https://chuckealy.com/fr/press.html",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Chuck Ealy",
+      "url": "https://chuckealy.com",
+      "jobTitle": "B\u00e2tisseur, Op\u00e9rateur & Leader Strat\u00e9gique"
+    }
+  }
+  </script>
+
+  <!-- Page-Specific Styles -->
+  <style>
+    /* ---- Testimonials Grid ---- */
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .testimonial-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: var(--space-2xl);
+      transition: all var(--transition-base);
+      position: relative;
+    }
+
+    .testimonial-card::before {
+      content: '\201C';
+      position: absolute;
+      top: var(--space-lg);
+      right: var(--space-xl);
+      font-size: 4rem;
+      font-family: Georgia, serif;
+      color: rgba(200, 164, 78, 0.1);
+      line-height: 1;
+      pointer-events: none;
+    }
+
+    .testimonial-card:hover {
+      border-color: rgba(200, 164, 78, 0.3);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .testimonial-card__text {
+      font-size: 0.95rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+      font-style: italic;
+    }
+
+    .testimonial-card__author {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+    }
+
+    .testimonial-card__avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-accent-dim);
+      border: 2px solid var(--color-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      flex-shrink: 0;
+    }
+
+    .testimonial-card__name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-text-primary);
+    }
+
+    .testimonial-card__role {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin-top: 2px;
+    }
+
+    /* ---- Media Features Grid ---- */
+    .media-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .media-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      transition: all var(--transition-base);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .media-card:hover {
+      border-color: rgba(200, 164, 78, 0.3);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+      color: inherit;
+    }
+
+    .media-card__image-wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 200px;
+    }
+
+    .media-card__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .media-card:hover .media-card__image {
+      transform: scale(1.05);
+    }
+
+    .media-card__publication {
+      position: absolute;
+      top: var(--space-md);
+      left: var(--space-md);
+      padding: 4px 12px;
+      background: rgba(10, 10, 10, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 100px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-accent);
+    }
+
+    .media-card__body {
+      padding: var(--space-xl);
+    }
+
+    .media-card__date {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: var(--space-sm);
+    }
+
+    .media-card__title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+      line-height: 1.3;
+      color: var(--color-text-primary);
+    }
+
+    .media-card__excerpt {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.6;
+      margin-bottom: var(--space-md);
+    }
+
+    .media-card__read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      transition: gap var(--transition-fast);
+    }
+
+    .media-card:hover .media-card__read-more {
+      gap: 10px;
+    }
+
+    .media-card__read-more svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ---- Awards List ---- */
+    .awards-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+    }
+
+    .award-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-lg);
+      padding: var(--space-xl);
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      transition: all var(--transition-base);
+    }
+
+    .award-item:hover {
+      border-color: rgba(200, 164, 78, 0.3);
+    }
+
+    .award-item__icon {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-accent-dim);
+      border-radius: 10px;
+      color: var(--color-accent);
+      flex-shrink: 0;
+    }
+
+    .award-item__icon svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .award-item__content {
+      flex: 1;
+    }
+
+    .award-item__year {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+
+    .award-item__title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      margin-bottom: 4px;
+    }
+
+    .award-item__desc {
+      font-size: 0.85rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    /* ---- Logo Grid Text Placeholders ---- */
+    .logo-grid__item-text {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.6;
+      transition: all var(--transition-base);
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    .logo-grid__item:hover .logo-grid__item-text {
+      color: var(--color-accent);
+      opacity: 1;
+    }
+
+    /* ---- Responsive ---- */
+    @media (min-width: 480px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .media-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .awards-list {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .media-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to Content -->
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Navigation principale">
+    <div class="nav__inner">
+      <a href="/fr/" class="nav__brand" aria-label="Chuck Ealy Accueil">CHUCK<span>EALY</span></a>
+
+      <div class="nav__links">
+        <a href="/fr/" class="nav__link">Accueil</a>
+        <a href="/fr/story.html" class="nav__link">Histoire</a>
+        <a href="/fr/impact.html" class="nav__link">Impact</a>
+        <a href="/fr/timeline.html" class="nav__link">Chronologie</a>
+        <a href="/fr/work.html" class="nav__link">Travail</a>
+        <a href="/fr/press.html" class="nav__link active">Presse</a>
+        <a href="/fr/writing.html" class="nav__link">&Eacute;crits</a>
+        <a href="/fr/contact.html" class="nav__link">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <div class="nav__lang">
+          <button class="nav__lang-btn" aria-label="Changer de langue" aria-expanded="false">
+            FR
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+          <div class="nav__lang-dropdown" role="menu">
+            <button class="nav__lang-option" role="menuitem" onclick="window.location.href='/'">English</button>
+            <button class="nav__lang-option" role="menuitem" onclick="window.location.href='/es/'">Espa&ntilde;ol</button>
+            <button class="nav__lang-option active" role="menuitem" onclick="window.location.href='/fr/'">Fran&ccedil;ais</button>
+          </div>
+        </div>
+
+        <button class="nav__toggle" aria-label="Basculer le menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" role="dialog" aria-label="Navigation mobile">
+    <a href="/fr/" class="mobile-nav__link">Accueil</a>
+    <a href="/fr/story.html" class="mobile-nav__link">Histoire</a>
+    <a href="/fr/impact.html" class="mobile-nav__link">Impact</a>
+    <a href="/fr/timeline.html" class="mobile-nav__link">Chronologie</a>
+    <a href="/fr/work.html" class="mobile-nav__link">Travail</a>
+    <a href="/fr/press.html" class="mobile-nav__link">Presse</a>
+    <a href="/fr/writing.html" class="mobile-nav__link">&Eacute;crits</a>
+    <a href="/fr/contact.html" class="mobile-nav__link">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero fade-in" aria-label="Introduction de la page">
+      <div class="page-hero__content">
+        <span class="label">Presse &amp; Reconnaissance</span>
+        <h1>Validation par des <span class="text-gradient">Tiers</span></h1>
+        <p>Quand ce sont les autres qui le disent, cela a un poids diff&eacute;rent. Couvertures m&eacute;diatiques, t&eacute;moignages de pairs, reconnaissances de l'industrie, et les logos des organisations qui ont fait confiance au travail accompli.</p>
+      </div>
+    </section>
+
+    <!-- ===== LOGO GRID ===== -->
+    <section class="section" aria-label="Cit&eacute; par">
+      <div class="container">
+        <div class="section-header section-header--center fade-in">
+          <span class="label">Cit&eacute; &amp; Reconnu Par</span>
+          <h2>Les organisations qui reconnaissent le travail</h2>
+          <p>Des m&eacute;dias aux partenaires d'entreprise, les logos ci-dessous repr&eacute;sentent les organisations qui ont cit&eacute;, soutenu ou collabor&eacute; avec Chuck Ealy.</p>
+        </div>
+
+        <div class="logo-grid stagger-children">
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">TechCrunch</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Forbes<br>Technology</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Harvard<br>Business Review</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Inc.<br>Magazine</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Wall Street<br>Journal</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Gartner</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">McKinsey<br>Quarterly</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Wired</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Fast<br>Company</span>
+          </div>
+          <div class="logo-grid__item">
+            <span class="logo-grid__item-text">Bloomberg<br>Technology</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="section stories" aria-label="T&eacute;moignages">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">T&eacute;moignages</span>
+          <h2>Ce que disent les coll&egrave;gues et partenaires</h2>
+          <p>Perspectives authentiques des personnes qui ont travaill&eacute; aux c&ocirc;t&eacute;s de Chuck pendant des d&eacute;cennies de construction, d'exploitation et de direction.</p>
+        </div>
+
+        <div class="testimonials-grid stagger-children">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">&laquo;&nbsp;Chuck ne se contente pas de d&eacute;finir une strat&eacute;gie puis de s'en aller. Il retrousse ses manches et construit la machine &agrave; vos c&ocirc;t&eacute;s. Le moteur de revenus qu'il a b&acirc;ti pour nous a &eacute;t&eacute; l'initiative la plus transformatrice de l'histoire de notre entreprise.&nbsp;&raquo;</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">MR</div>
+              <div>
+                <div class="testimonial-card__name">Margaret Reeves</div>
+                <div class="testimonial-card__role">PDG, Ascent Dynamics</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">&laquo;&nbsp;J'ai travaill&eacute; avec des dizaines d'op&eacute;rateurs au cours de ma carri&egrave;re. Chuck est dans une cat&eacute;gorie &agrave; part. Il voit des syst&egrave;mes l&agrave; o&ugrave; les autres voient le chaos, et il construit de la clart&eacute; l&agrave; o&ugrave; les autres construisent de la bureaucratie. Un talent rare.&nbsp;&raquo;</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">DK</div>
+              <div>
+                <div class="testimonial-card__name">David Kowalski</div>
+                <div class="testimonial-card__role">Associ&eacute; g&eacute;rant, Bridgepoint Capital</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">&laquo;&nbsp;Quand Chuck a rejoint notre conseil d'administration, nos co&ucirc;ts op&eacute;rationnels &eacute;taient en spirale. En un an, il avait identifi&eacute; 3&nbsp;M$ d'&eacute;conomies sans un seul licenciement. C'est ce type de leadership qui inspire la confiance.&nbsp;&raquo;</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">SP</div>
+              <div>
+                <div class="testimonial-card__name">Sarah Patel</div>
+                <div class="testimonial-card__role">Pr&eacute;sidente du conseil, Meridian Health Systems</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 4 -->
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">&laquo;&nbsp;Chuck a construit notre &eacute;quipe d'ing&eacute;nierie &agrave; partir de z&eacute;ro. Pas seulement recrut&eacute; du personnel, mais architect&eacute; la culture, les processus et les structures de responsabilit&eacute;. Deux ans plus tard, nous avions 94&nbsp;% de r&eacute;tention en pleine hypercroissance.&nbsp;&raquo;</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">JL</div>
+              <div>
+                <div class="testimonial-card__name">James Liu</div>
+                <div class="testimonial-card__role">Directeur technique, Vanguard Labs</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 5 -->
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">&laquo;&nbsp;Ce qui distingue Chuck, c'est sa capacit&eacute; &agrave; faire le lien entre la salle du conseil et le terrain. Il parle couramment les deux langues, et c'est ce pont qui permet &agrave; l'ex&eacute;cution de v&eacute;ritablement se concr&eacute;tiser.&nbsp;&raquo;</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AN</div>
+              <div>
+                <div class="testimonial-card__name">Andrea Novak</div>
+                <div class="testimonial-card__role">VP des op&eacute;rations, Helix Infrastructure</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 6 -->
+          <div class="testimonial-card">
+            <p class="testimonial-card__text">&laquo;&nbsp;J'ai fait appel &agrave; Chuck pour une mission de six mois. Il a fini par remodeler enti&egrave;rement notre strat&eacute;gie de mise sur le march&eacute; et est rest&eacute; en tant que conseiller. Cette d&eacute;cision a ajout&eacute; 8&nbsp;M$ au pipeline d&egrave;s la premi&egrave;re ann&eacute;e.&nbsp;&raquo;</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">RT</div>
+              <div>
+                <div class="testimonial-card__name">Robert Torres</div>
+                <div class="testimonial-card__role">Fondateur, Catalyst Commerce</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MEDIA FEATURES ===== -->
+    <section class="section" aria-label="Couverture m&eacute;diatique">
+      <div class="container">
+        <div class="section-header section-header--center fade-in">
+          <span class="label">Dans la presse</span>
+          <h2>Couverture m&eacute;diatique</h2>
+          <p>Articles et reportages s&eacute;lectionn&eacute;s dans des publications de r&eacute;f&eacute;rence sur le leadership, les op&eacute;rations et l'intersection de la strat&eacute;gie et de l'ex&eacute;cution.</p>
+        </div>
+
+        <div class="media-grid stagger-children">
+          <!-- Media Card 1 -->
+          <a href="#" class="media-card">
+            <div class="media-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop&q=80"
+                alt="Espace de travail moderne avec environnement d'&eacute;quipe collaboratif"
+                class="media-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <span class="media-card__publication">Forbes Technology</span>
+            </div>
+            <div class="media-card__body">
+              <div class="media-card__date">Mars 2025</div>
+              <h3 class="media-card__title">Le manuel de l'op&eacute;rateur : comment un leader transforme la complexit&eacute; en clart&eacute;</h3>
+              <p class="media-card__excerpt">Une analyse approfondie des cadres syst&eacute;matiques derri&egrave;re la mise &agrave; l'&eacute;chelle des op&eacute;rations sans sacrifier la culture ni la v&eacute;locit&eacute;.</p>
+              <span class="media-card__read-more">
+                Lire l'article
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Media Card 2 -->
+          <a href="#" class="media-card">
+            <div class="media-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&q=80"
+                alt="Tableau de bord analytique montrant des indicateurs de croissance"
+                class="media-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <span class="media-card__publication">Inc. Magazine</span>
+            </div>
+            <div class="media-card__body">
+              <div class="media-card__date">Janvier 2025</div>
+              <h3 class="media-card__title">De z&eacute;ro &agrave; 12&nbsp;M$ de revenus r&eacute;currents : la discipline derri&egrave;re une croissance explosive</h3>
+              <p class="media-card__excerpt">Comment une approche m&eacute;thodique de la cr&eacute;ation de pipeline, de l'architecture d'&eacute;quipe et de la conception de processus a g&eacute;n&eacute;r&eacute; des millions en nouveaux revenus r&eacute;currents.</p>
+              <span class="media-card__read-more">
+                Lire l'article
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Media Card 3 -->
+          <a href="#" class="media-card">
+            <div class="media-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&q=80"
+                alt="&Eacute;quipe diversifi&eacute;e collaborant dans un espace de travail moderne"
+                class="media-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <span class="media-card__publication">Harvard Business Review</span>
+            </div>
+            <div class="media-card__body">
+              <div class="media-card__date">Novembre 2024</div>
+              <h3 class="media-card__title">Pourquoi les meilleurs leaders construisent des &eacute;quipes, pas des organigrammes</h3>
+              <p class="media-card__excerpt">Une exploration de la philosophie d'architecture d'&eacute;quipe qui atteint 94&nbsp;% de r&eacute;tention gr&acirc;ce &agrave; la clart&eacute;, l'autonomie et une v&eacute;ritable responsabilisation.</p>
+              <span class="media-card__read-more">
+                Lire l'article
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Media Card 4 -->
+          <a href="#" class="media-card">
+            <div class="media-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80"
+                alt="Session de planification strat&eacute;gique avec visualisation de donn&eacute;es"
+                class="media-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <span class="media-card__publication">Fast Company</span>
+            </div>
+            <div class="media-card__body">
+              <div class="media-card__date">Septembre 2024</div>
+              <h3 class="media-card__title">R&eacute;duire 3&nbsp;M$ de co&ucirc;ts sans supprimer un seul poste</h3>
+              <p class="media-card__excerpt">Le cadre d'audit op&eacute;rationnel qui identifie le gaspillage, ren&eacute;gocie les contrats et automatise les flux de travail tout en conservant chaque membre de l'&eacute;quipe.</p>
+              <span class="media-card__read-more">
+                Lire l'article
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Media Card 5 -->
+          <a href="#" class="media-card">
+            <div class="media-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop&q=80"
+                alt="Dirigeant s'exprimant lors d'une conf&eacute;rence technologique"
+                class="media-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <span class="media-card__publication">Wired</span>
+            </div>
+            <div class="media-card__body">
+              <div class="media-card__date">Juin 2024</div>
+              <h3 class="media-card__title">La fin des indicateurs de vanit&eacute; : plaidoyer pour la v&eacute;rit&eacute; op&eacute;rationnelle</h3>
+              <p class="media-card__excerpt">Pourquoi les leaders les plus efficaces refusent de mesurer ce qui n'a pas d'importance, et comment construire des syst&egrave;mes de mesure qui g&eacute;n&egrave;rent de v&eacute;ritables r&eacute;sultats.</p>
+              <span class="media-card__read-more">
+                Lire l'article
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Media Card 6 -->
+          <a href="#" class="media-card">
+            <div class="media-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=400&fit=crop&q=80"
+                alt="R&eacute;union strat&eacute;gique sur le leadership technologique"
+                class="media-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+              <span class="media-card__publication">Bloomberg Technology</span>
+            </div>
+            <div class="media-card__body">
+              <div class="media-card__date">Avril 2024</div>
+              <h3 class="media-card__title">Leadership fractionn&eacute; : l'essor du dirigeant &agrave; la demande</h3>
+              <p class="media-card__excerpt">Comment les op&eacute;rateurs exp&eacute;riment&eacute;s red&eacute;finissent le mod&egrave;le de direction, offrant un leadership de calibre entreprise aux soci&eacute;t&eacute;s qui ont besoin de r&eacute;sultats imm&eacute;diats.</p>
+              <span class="media-card__read-more">
+                Lire l'article
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AWARDS & RECOGNITION ===== -->
+    <section class="section stories" aria-label="Prix et reconnaissance">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Prix &amp; Reconnaissance</span>
+          <h2>Reconnaissance de l'industrie</h2>
+          <p>Une s&eacute;lection de prix, d'honneurs et de reconnaissances formelles obtenus gr&acirc;ce &agrave; une ex&eacute;cution constante et un impact mesurable.</p>
+        </div>
+
+        <div class="awards-list stagger-children">
+          <!-- Award 1 -->
+          <div class="award-item">
+            <div class="award-item__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="award-item__content">
+              <div class="award-item__year">2025</div>
+              <div class="award-item__title">Top 50 des op&eacute;rateurs en technologie</div>
+              <div class="award-item__desc">Reconnu par The Operator's Guild pour son impact durable &agrave; travers plusieurs entreprises et sa livraison constante de r&eacute;sultats mesurables.</div>
+            </div>
+          </div>
+
+          <!-- Award 2 -->
+          <div class="award-item">
+            <div class="award-item__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </div>
+            <div class="award-item__content">
+              <div class="award-item__year">2024</div>
+              <div class="award-item__title">Prix d'excellence en leadership op&eacute;rationnel</div>
+              <div class="award-item__desc">D&eacute;cern&eacute; par la National Association of Business Leaders pour une transformation op&eacute;rationnelle exceptionnelle et la construction d'&eacute;quipes.</div>
+            </div>
+          </div>
+
+          <!-- Award 3 -->
+          <div class="award-item">
+            <div class="award-item__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="award-item__content">
+              <div class="award-item__year">2023</div>
+              <div class="award-item__title">Inc. 5000 des entreprises &agrave; la croissance la plus rapide (r&ocirc;le de conseil)</div>
+              <div class="award-item__desc">Trois entreprises du portefeuille conseill&eacute;es par Chuck ont obtenu la reconnaissance Inc. 5000 dans les 24 mois suivant le d&eacute;but de la collaboration.</div>
+            </div>
+          </div>
+
+          <!-- Award 4 -->
+          <div class="award-item">
+            <div class="award-item__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="award-item__content">
+              <div class="award-item__year">2022</div>
+              <div class="award-item__title">Leader de la croissance des revenus de l'ann&eacute;e</div>
+              <div class="award-item__desc">Distingu&eacute; par la SaaS Growth Alliance pour avoir con&ccedil;u une transformation du pipeline g&eacute;n&eacute;rant 12&nbsp;M$ en nouveaux revenus annuels r&eacute;currents.</div>
+            </div>
+          </div>
+
+          <!-- Award 5 -->
+          <div class="award-item">
+            <div class="award-item__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+            </div>
+            <div class="award-item__content">
+              <div class="award-item__year">2021</div>
+              <div class="award-item__title">Prix de la meilleure culture d'entreprise (construction d'&eacute;quipe)</div>
+              <div class="award-item__desc">&Eacute;quipe construite de z&eacute;ro ayant obtenu la reconnaissance de meilleur lieu de travail avec 94&nbsp;% de r&eacute;tention et un score de culture au 98e percentile national.</div>
+            </div>
+          </div>
+
+          <!-- Award 6 -->
+          <div class="award-item">
+            <div class="award-item__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="award-item__content">
+              <div class="award-item__year">2019</div>
+              <div class="award-item__title">40 de moins de 40 ans en innovation d'entreprise</div>
+              <div class="award-item__desc">S&eacute;lectionn&eacute; par le Regional Business Journal pour des cadres op&eacute;rationnels pionniers ayant r&eacute;duit les co&ucirc;ts de 40&nbsp;% dans plusieurs organisations.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE SECTION ===== -->
+    <section class="quote-section fade-in" aria-label="Citation">
+      <div class="container container--narrow">
+        <blockquote>
+          <p class="quote__text">&laquo;&nbsp;La r&eacute;putation ne se construit pas sur ce que vous dites de vous-m&ecirc;me. Elle se construit sur ce que les autres disent quand vous n'&ecirc;tes pas dans la pi&egrave;ce.&nbsp;&raquo;</p>
+          <footer class="quote__attribution">&mdash; <strong>Chuck Ealy</strong></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner fade-in" aria-label="Appel &agrave; l'action">
+      <div class="cta-banner__bg"></div>
+      <div class="cta-banner__content container container--narrow">
+        <h2>Envie de travailler ensemble ?</h2>
+        <p>Si vous cherchez un partenaire strat&eacute;gique qui produit des r&eacute;sultats mesurables, et pas seulement des conseils, commen&ccedil;ons la conversation.</p>
+        <div>
+          <a href="/fr/contact.html" class="btn btn--primary btn--lg">Prendre contact</a>
+          <a href="/fr/work.html" class="btn btn--secondary btn--lg">Comment je travaille</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">CHUCK<span>EALY</span></div>
+        <p class="footer__brand-desc">B&acirc;tisseur. Op&eacute;rateur. Leader qui livre. Une archive vivante d'impact mesurable et de leadership strat&eacute;gique.</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Naviguer</h4>
+        <a href="/fr/story.html">Histoire</a>
+        <a href="/fr/impact.html">Impact</a>
+        <a href="/fr/timeline.html">Chronologie</a>
+        <a href="/fr/work.html">Travail</a>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Plus</h4>
+        <a href="/fr/press.html">Presse</a>
+        <a href="/fr/writing.html">&Eacute;crits</a>
+        <a href="/fr/contact.html">Contact</a>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Langue</h4>
+        <a href="/">English</a>
+        <a href="/es/">Espa&ntilde;ol</a>
+        <a href="/fr/">Fran&ccedil;ais</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2026 Chuck Ealy. Tous droits r&eacute;serv&eacute;s.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="Retour en haut">
+    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
