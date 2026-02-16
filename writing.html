@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing & Ideas — Chuck Ealy | Essays on Leadership, Operations & Building</title>
+  <meta name="description" content="Long-form essays, frameworks, and thought leadership from Chuck Ealy. Substance over noise — real insights on leadership, operations, strategy, and building things that ship.">
+  <meta name="keywords" content="Chuck Ealy, leadership essays, operations frameworks, strategy writing, thought leadership, executive insights, building culture">
+  <meta name="author" content="Chuck Ealy">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Writing & Ideas — Chuck Ealy">
+  <meta property="og:description" content="Long-form essays, frameworks, and thought leadership. Substance over noise — real insights on leadership, operations, and building things that ship.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chuckealy.com/writing.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Writing & Ideas — Chuck Ealy">
+  <meta name="twitter:description" content="Long-form essays, frameworks, and thought leadership. Substance over noise.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=630&fit=crop&q=80">
+
+  <!-- Canonical & Hreflang -->
+  <link rel="canonical" href="https://chuckealy.com/writing.html">
+  <link rel="alternate" hreflang="en" href="https://chuckealy.com/writing.html">
+  <link rel="alternate" hreflang="es" href="https://chuckealy.com/es/writing.html">
+  <link rel="alternate" hreflang="fr" href="https://chuckealy.com/fr/writing.html">
+  <link rel="alternate" hreflang="x-default" href="https://chuckealy.com/writing.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Writing & Ideas — Chuck Ealy",
+    "description": "Long-form essays, frameworks, and thought leadership from Chuck Ealy on leadership, operations, strategy, and building things that ship.",
+    "url": "https://chuckealy.com/writing.html",
+    "author": {
+      "@type": "Person",
+      "name": "Chuck Ealy",
+      "url": "https://chuckealy.com"
+    }
+  }
+  </script>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* Featured Essay */
+    .featured-essay {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      transition: all var(--transition-base);
+    }
+
+    .featured-essay:hover {
+      border-color: rgba(200, 164, 78, 0.3);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-glow);
+    }
+
+    .featured-essay__image-wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+    }
+
+    .featured-essay__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform var(--transition-slow);
+    }
+
+    .featured-essay:hover .featured-essay__image {
+      transform: scale(1.03);
+    }
+
+    .featured-essay__image-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(10, 10, 10, 0.6) 100%);
+      pointer-events: none;
+    }
+
+    .featured-essay__badge {
+      position: absolute;
+      top: var(--space-lg);
+      left: var(--space-lg);
+      padding: 6px 16px;
+      background: var(--color-accent);
+      color: var(--color-bg);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      border-radius: 100px;
+    }
+
+    .featured-essay__body {
+      padding: var(--space-2xl);
+    }
+
+    .featured-essay__category {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-accent);
+      margin-bottom: var(--space-md);
+      display: block;
+    }
+
+    .featured-essay__title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: var(--space-lg);
+      color: var(--color-text-primary);
+    }
+
+    .featured-essay__excerpt {
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.8;
+      margin-bottom: var(--space-xl);
+      max-width: 65ch;
+    }
+
+    .featured-essay__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      transition: gap var(--transition-fast);
+    }
+
+    .featured-essay__link:hover {
+      gap: 14px;
+      color: var(--color-accent-light);
+    }
+
+    .featured-essay__link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    /* Article Grid */
+    .articles-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+    }
+
+    .articles-grid .article-card {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .articles-grid .article-card:hover {
+      color: inherit;
+    }
+
+    .articles-grid .article-card__image-wrapper {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .articles-grid .article-card__image {
+      transition: transform var(--transition-slow);
+    }
+
+    .articles-grid .article-card:hover .article-card__image {
+      transform: scale(1.05);
+    }
+
+    .articles-grid .article-card__body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .articles-grid .article-card__excerpt {
+      flex: 1;
+    }
+
+    .articles-grid .article-card__read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: var(--space-md);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      transition: gap var(--transition-fast);
+    }
+
+    .articles-grid .article-card:hover .article-card__read-more {
+      gap: 10px;
+    }
+
+    .articles-grid .article-card__read-more svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* Frameworks Section */
+    .frameworks {
+      background: var(--color-bg-elevated);
+    }
+
+    .frameworks-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+    }
+
+    .framework-card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius);
+      padding: var(--space-2xl);
+      transition: all var(--transition-base);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .framework-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--color-accent), var(--color-accent-light));
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+
+    .framework-card:hover {
+      border-color: var(--color-accent);
+      box-shadow: var(--shadow-glow);
+      transform: translateY(-3px);
+    }
+
+    .framework-card:hover::before {
+      opacity: 1;
+    }
+
+    .framework-card__icon {
+      width: 52px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-accent-dim);
+      border-radius: 14px;
+      color: var(--color-accent);
+      margin-bottom: var(--space-lg);
+    }
+
+    .framework-card__icon svg {
+      width: 26px;
+      height: 26px;
+    }
+
+    .framework-card__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+      color: var(--color-text-primary);
+    }
+
+    .framework-card__subtitle {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-accent);
+      margin-bottom: var(--space-md);
+      display: block;
+    }
+
+    .framework-card__desc {
+      font-size: 0.9rem;
+      color: var(--color-text-secondary);
+      line-height: 1.7;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+      position: relative;
+      padding: var(--space-4xl) 0;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .newsletter::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(200, 164, 78, 0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .newsletter__content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .newsletter__form {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+      max-width: 480px;
+      margin: var(--space-2xl) auto 0;
+    }
+
+    .newsletter__input {
+      width: 100%;
+      padding: 16px 20px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--border-radius-sm);
+      color: var(--color-text-primary);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .newsletter__input::placeholder {
+      color: var(--color-text-muted);
+    }
+
+    .newsletter__input:focus {
+      outline: none;
+      border-color: var(--color-accent);
+      box-shadow: 0 0 0 3px var(--color-accent-dim);
+    }
+
+    .newsletter__btn {
+      width: 100%;
+    }
+
+    .newsletter__note {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: var(--space-sm);
+    }
+
+    /* Responsive */
+    @media (min-width: 480px) {
+      .articles-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .frameworks-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 768px) {
+      .featured-essay {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .featured-essay__image-wrapper {
+        height: auto;
+        min-height: 400px;
+      }
+
+      .featured-essay__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: var(--space-3xl);
+      }
+
+      .newsletter__form {
+        flex-direction: row;
+      }
+
+      .newsletter__input {
+        flex: 1;
+      }
+
+      .newsletter__btn {
+        width: auto;
+        white-space: nowrap;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .articles-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .frameworks-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to Content -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__brand" aria-label="Chuck Ealy Home">CHUCK<span>EALY</span></a>
+
+      <div class="nav__links">
+        <a href="/" class="nav__link">Home</a>
+        <a href="story.html" class="nav__link">Story</a>
+        <a href="impact.html" class="nav__link">Impact</a>
+        <a href="timeline.html" class="nav__link">Timeline</a>
+        <a href="work.html" class="nav__link">Work</a>
+        <a href="press.html" class="nav__link">Press</a>
+        <a href="writing.html" class="nav__link active">Writing</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <div class="nav__lang">
+          <button class="nav__lang-btn" aria-label="Change language" aria-expanded="false">
+            EN
+            <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"/></svg>
+          </button>
+          <div class="nav__lang-dropdown" role="menu">
+            <button class="nav__lang-option active" role="menuitem" onclick="window.location.href='/'">English</button>
+            <button class="nav__lang-option" role="menuitem" onclick="window.location.href='/es/'">Espa&ntilde;ol</button>
+            <button class="nav__lang-option" role="menuitem" onclick="window.location.href='/fr/'">Fran&ccedil;ais</button>
+          </div>
+        </div>
+
+        <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" role="dialog" aria-label="Mobile navigation">
+    <a href="/" class="mobile-nav__link">Home</a>
+    <a href="story.html" class="mobile-nav__link">Story</a>
+    <a href="impact.html" class="mobile-nav__link">Impact</a>
+    <a href="timeline.html" class="mobile-nav__link">Timeline</a>
+    <a href="work.html" class="mobile-nav__link">Work</a>
+    <a href="press.html" class="mobile-nav__link">Press</a>
+    <a href="writing.html" class="mobile-nav__link">Writing</a>
+    <a href="contact.html" class="mobile-nav__link">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <main id="main">
+
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero fade-in" aria-label="Page introduction">
+      <div class="page-hero__content">
+        <span class="label">Writing & Ideas</span>
+        <h1><span class="text-gradient">Substance Over Noise</span></h1>
+        <p>Long-form essays, hard-won frameworks, and unfiltered thinking on leadership, operations, and building things that actually work. No fluff. No platitudes. Just the signal.</p>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED ESSAY ===== -->
+    <section class="section" aria-label="Featured essay">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="label">Featured Essay</span>
+          <h2>Latest Thinking</h2>
+        </div>
+
+        <article class="featured-essay fade-in">
+          <div class="featured-essay__image-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop&q=80"
+              alt="Strategic planning session with detailed notes and analysis"
+              class="featured-essay__image"
+              width="800"
+              height="600"
+              loading="eager"
+            >
+            <div class="featured-essay__image-overlay"></div>
+            <span class="featured-essay__badge">Featured</span>
+          </div>
+          <div class="featured-essay__body">
+            <span class="featured-essay__category">Strategy &middot; Leadership</span>
+            <h3 class="featured-essay__title">The Execution Gap: Why Strategy Without Discipline Is Just a Wish</h3>
+            <p class="featured-essay__excerpt">
+              Every organization has a strategy deck. Most of them are fiction. The uncomfortable truth is that the gap between a brilliant strategy and a meaningful outcome is not insight, talent, or capital. It is execution discipline. The ability to translate intent into action, day after day, across every layer of the organization. This essay breaks down the anatomy of the execution gap, the three systemic failures that create it, and the operational framework for closing it permanently.
+            </p>
+            <a href="#" class="featured-essay__link">
+              Read the full essay
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+          </div>
+        </article>
+        <p class="img-attribution">Photo: Unsplash (free license)</p>
+      </div>
+    </section>
+
+    <!-- ===== ARTICLE GRID ===== -->
+    <section class="section" style="background: var(--color-bg-elevated);" aria-label="Essays and articles">
+      <div class="container">
+        <div class="section-header section-header--center fade-in">
+          <span class="label">Essays</span>
+          <h2>From the Field</h2>
+          <p>Lessons learned in the trenches, not the classroom. Each essay is drawn from real situations, real failures, and real outcomes.</p>
+        </div>
+
+        <div class="articles-grid stagger-children">
+          <!-- Article 1 -->
+          <a href="#" class="article-card">
+            <div class="article-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=400&fit=crop&q=80"
+                alt="Team collaborating around a shared screen in a modern workspace"
+                class="article-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+            </div>
+            <div class="article-card__body">
+              <div class="article-card__category">Leadership</div>
+              <h3 class="article-card__title">The Leader's Job Is to Make Themselves Unnecessary</h3>
+              <p class="article-card__excerpt">If your team cannot function without you, you have not built a team. You have built a dependency. The hardest leadership skill is building systems that outlive your involvement.</p>
+              <span class="article-card__read-more">
+                Read essay
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 2 -->
+          <a href="#" class="article-card">
+            <div class="article-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop&q=80"
+                alt="Dashboard analytics showing operational metrics and KPIs"
+                class="article-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+            </div>
+            <div class="article-card__body">
+              <div class="article-card__category">Operations</div>
+              <h3 class="article-card__title">Why Most Operations Teams Are Firefighting Instead of Building</h3>
+              <p class="article-card__excerpt">Reactive operations feel productive. You are solving urgent problems all day. But urgency is not importance. Here is how to break the cycle and build an operations engine that prevents fires instead of fighting them.</p>
+              <span class="article-card__read-more">
+                Read essay
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 3 -->
+          <a href="#" class="article-card">
+            <div class="article-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop&q=80"
+                alt="Strategic business meeting with executives discussing growth plans"
+                class="article-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+            </div>
+            <div class="article-card__body">
+              <div class="article-card__category">Strategy</div>
+              <h3 class="article-card__title">The One-Page Strategy: If You Cannot Fit It on a Page, You Do Not Understand It</h3>
+              <p class="article-card__excerpt">Complexity is not a sign of sophistication. It is a sign of confusion. The most powerful strategies are ruthlessly simple, because simplicity requires absolute clarity about what matters.</p>
+              <span class="article-card__read-more">
+                Read essay
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 4 -->
+          <a href="#" class="article-card">
+            <div class="article-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=400&fit=crop&q=80"
+                alt="Diverse team members working together in a collaborative environment"
+                class="article-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+            </div>
+            <div class="article-card__body">
+              <div class="article-card__category">Culture</div>
+              <h3 class="article-card__title">Culture Is Not a Ping-Pong Table: Building Teams That Retain Through Honesty</h3>
+              <p class="article-card__excerpt">Perks attract resumes. Culture retains people. The difference between a team that survives hypergrowth and one that implodes is not compensation. It is clarity, candor, and earned trust.</p>
+              <span class="article-card__read-more">
+                Read essay
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 5 -->
+          <a href="#" class="article-card">
+            <div class="article-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&q=80"
+                alt="Growth analytics and revenue charts showing upward trajectory"
+                class="article-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+            </div>
+            <div class="article-card__body">
+              <div class="article-card__category">Growth</div>
+              <h3 class="article-card__title">The $0 to $12M Playbook: Revenue Systems That Actually Scale</h3>
+              <p class="article-card__excerpt">Revenue does not come from heroic salespeople. It comes from systems. The pipeline architecture, qualification rigor, and handoff discipline that turn a stalled engine into a compounding machine.</p>
+              <span class="article-card__read-more">
+                Read essay
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Article 6 -->
+          <a href="#" class="article-card">
+            <div class="article-card__image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop&q=80"
+                alt="Engineering team building modern technology infrastructure"
+                class="article-card__image"
+                width="600"
+                height="400"
+                loading="lazy"
+              >
+            </div>
+            <div class="article-card__body">
+              <div class="article-card__category">Technology</div>
+              <h3 class="article-card__title">Technical Debt Is a Leadership Problem, Not an Engineering Problem</h3>
+              <p class="article-card__excerpt">Engineering teams do not accumulate technical debt because they are lazy. They accumulate it because leadership incentivizes speed without accounting for the compound cost of shortcuts.</p>
+              <span class="article-card__read-more">
+                Read essay
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FRAMEWORKS SECTION ===== -->
+    <section class="section frameworks" aria-label="Frameworks and mental models">
+      <div class="container">
+        <div class="section-header section-header--center fade-in">
+          <span class="label">Frameworks</span>
+          <h2>Mental Models for Builders</h2>
+          <p>Thinking tools forged from decades of building, breaking, and rebuilding. These are the lenses through which every decision gets made.</p>
+        </div>
+
+        <div class="frameworks-grid stagger-children">
+          <!-- Framework 1 -->
+          <div class="framework-card">
+            <div class="framework-card__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"/></svg>
+            </div>
+            <span class="framework-card__subtitle">Decision Framework</span>
+            <h3 class="framework-card__title">The Receipts Framework</h3>
+            <p class="framework-card__desc">Every claim needs evidence. Every outcome needs measurement. The Receipts Framework is a discipline of proving what you ship, documenting what you build, and letting results speak louder than narratives. No vanity metrics. No hand-waving. Receipts or it did not happen.</p>
+          </div>
+
+          <!-- Framework 2 -->
+          <div class="framework-card">
+            <div class="framework-card__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/></svg>
+            </div>
+            <span class="framework-card__subtitle">Operations Model</span>
+            <h3 class="framework-card__title">The 3-Layer Operations Model</h3>
+            <p class="framework-card__desc">Layer one: infrastructure that does not break. Layer two: processes that scale without adding headcount. Layer three: intelligence that turns data into decisions. Most teams only build layer one and wonder why they cannot scale. The model forces clarity about what is missing.</p>
+          </div>
+
+          <!-- Framework 3 -->
+          <div class="framework-card">
+            <div class="framework-card__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+            </div>
+            <span class="framework-card__subtitle">Execution Principle</span>
+            <h3 class="framework-card__title">Ship > Perfect</h3>
+            <p class="framework-card__desc">Perfection is procrastination wearing a lab coat. The fastest path to a great product is shipping a good one, measuring what actually happens, and iterating with real data instead of assumptions. Velocity compounds. Hesitation decays. Ship it, learn from it, improve it.</p>
+          </div>
+
+          <!-- Framework 4 -->
+          <div class="framework-card">
+            <div class="framework-card__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+            </div>
+            <span class="framework-card__subtitle">Team Architecture</span>
+            <h3 class="framework-card__title">The Ownership Radius</h3>
+            <p class="framework-card__desc">Every person on a team should own a clearly defined radius of responsibility with full authority to act within it. Ambiguity kills velocity. When ownership is clear, decisions happen fast, accountability is natural, and the team operates like a system instead of a committee.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER SECTION ===== -->
+    <section class="newsletter fade-in" aria-label="Newsletter signup">
+      <div class="container container--narrow">
+        <div class="newsletter__content">
+          <span class="label">Stay Sharp</span>
+          <h2 style="margin-top: var(--space-md);">Get the Essays First</h2>
+          <p style="margin: var(--space-md) auto 0; text-align: center;">New essays, frameworks, and unfiltered thinking delivered directly to your inbox. No spam. No fluff. Just the work.</p>
+
+          <form class="newsletter__form" action="#" method="post" aria-label="Newsletter subscription">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="newsletter-email"
+              name="email"
+              class="newsletter__input"
+              placeholder="your@email.com"
+              required
+              autocomplete="email"
+              aria-label="Email address"
+            >
+            <button type="submit" class="btn btn--primary newsletter__btn">Subscribe</button>
+          </form>
+          <p class="newsletter__note">No spam, ever. Unsubscribe anytime. Typically one essay per month.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== QUOTE SECTION ===== -->
+    <section class="quote-section fade-in" aria-label="Quote">
+      <div class="container container--narrow">
+        <blockquote>
+          <p class="quote__text">"Writing is thinking made visible. If you cannot write it clearly, you do not understand it yet."</p>
+          <footer class="quote__attribution">— <strong>Chuck Ealy</strong></footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ===== CTA BANNER ===== -->
+    <section class="cta-banner fade-in" aria-label="Call to action">
+      <div class="cta-banner__bg"></div>
+      <div class="cta-banner__content container container--narrow">
+        <h2>Ready to Build Something?</h2>
+        <p>Whether it is a strategic challenge, a team that needs structure, or a venture that needs momentum — let's talk.</p>
+        <div>
+          <a href="contact.html" class="btn btn--primary btn--lg">Get in Touch</a>
+          <a href="work.html" class="btn btn--secondary btn--lg">How I Work</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__brand-name">CHUCK<span>EALY</span></div>
+        <p class="footer__brand-desc">Builder. Operator. Leader who ships. A living archive of measurable impact and strategic leadership.</p>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Navigate</h4>
+        <a href="story.html">Story</a>
+        <a href="impact.html">Impact</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="work.html">Work</a>
+      </div>
+
+      <div class="footer__nav">
+        <h4>More</h4>
+        <a href="press.html">Press</a>
+        <a href="writing.html">Writing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer__nav">
+        <h4>Language</h4>
+        <a href="/">English</a>
+        <a href="/es/">Espa&ntilde;ol</a>
+        <a href="/fr/">Fran&ccedil;ais</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__copyright">&copy; 2026 Chuck Ealy. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="Scroll to top">
+    <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
