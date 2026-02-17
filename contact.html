@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact — Chuck Ealy | Let's Build Something Together</title>
-  <meta name="description" content="Get in touch with Chuck Ealy for advisory, speaking engagements, partnerships, or strategic leadership conversations. Typically responds within 48 hours.">
-  <meta name="keywords" content="Chuck Ealy, contact, advisory, speaking, partnership, leadership, consulting">
-  <meta name="author" content="Chuck Ealy">
+  <title>Contact &mdash; Chuck Ealey | Connect with Chuck Ealey</title>
+  <meta name="description" content="Connect with Chuck Ealey for speaking engagements, Foundation partnerships, media interviews, and general inquiries. Book Chuck for your next event and bring the Undefeated Spirit to your audience.">
+  <meta name="keywords" content="Chuck Ealey, contact, speaking inquiry, foundation partnership, media request, book speaker, Undefeated Spirit">
+  <meta name="author" content="Chuck Ealey">
   <meta name="robots" content="index, follow">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Contact — Chuck Ealy | Let's Build Something Together">
-  <meta property="og:description" content="Get in touch with Chuck Ealy for advisory, speaking engagements, partnerships, or strategic leadership conversations.">
+  <meta property="og:title" content="Contact — Chuck Ealey | Connect with Chuck Ealey">
+  <meta property="og:description" content="Connect with Chuck Ealey for speaking engagements, Foundation partnerships, media interviews, and general inquiries.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://chuckealy.com/contact.html">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&q=80">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=630&fit=crop&q=80">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="es_ES">
   <meta property="og:locale:alternate" content="fr_FR">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact — Chuck Ealy | Let's Build Something Together">
-  <meta name="twitter:description" content="Get in touch with Chuck Ealy for advisory, speaking engagements, partnerships, or strategic leadership conversations.">
+  <meta name="twitter:title" content="Contact — Chuck Ealey">
+  <meta name="twitter:description" content="Connect with Chuck Ealey for speaking engagements, Foundation partnerships, media interviews, and general inquiries.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=630&fit=crop&q=80">
 
   <!-- Canonical & Hreflang -->
   <link rel="canonical" href="https://chuckealy.com/contact.html">
@@ -39,46 +40,111 @@
   <!-- Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- Contact Page Specific Styles -->
+  <!-- Contact-specific Styles -->
   <style>
-    /* ---------- Contact Grid Layout ---------- */
     .contact-grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: var(--space-3xl);
+      align-items: start;
     }
 
     @media (min-width: 768px) {
       .contact-grid {
-        grid-template-columns: 1.2fr 0.8fr;
-        gap: var(--space-4xl);
+        grid-template-columns: 1.2fr 1fr;
       }
     }
 
-    /* ---------- Contact Form ---------- */
-    .contact-form {
+    .contact-info-card {
       background: var(--color-bg-card);
       border: 1px solid var(--color-border);
       border-radius: var(--border-radius);
       padding: var(--space-2xl);
     }
 
-    @media (min-width: 480px) {
-      .contact-form {
-        padding: var(--space-3xl);
-      }
+    .contact-info-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: var(--space-lg);
     }
 
-    .contact-form__title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      margin-bottom: var(--space-xs);
+    .contact-info-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--color-border);
     }
 
-    .contact-form__subtitle {
-      font-size: 0.9rem;
+    .contact-info-item:last-child {
+      border-bottom: none;
+    }
+
+    .contact-info-item__icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-accent-dim);
+      border-radius: 10px;
+      color: var(--color-accent);
+    }
+
+    .contact-info-item__icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .contact-info-item__text {
+      flex: 1;
+    }
+
+    .contact-info-item__label {
+      font-size: 0.8rem;
+      font-weight: 600;
       color: var(--color-text-muted);
-      margin-bottom: var(--space-2xl);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 4px;
+    }
+
+    .contact-info-item__value {
+      font-size: 0.95rem;
+      color: var(--color-text-primary);
+    }
+
+    .contact-info-item__value a {
+      color: var(--color-accent);
+    }
+
+    .contact-social {
+      display: flex;
+      gap: var(--space-md);
+      margin-top: var(--space-xl);
+    }
+
+    .contact-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border);
+      color: var(--color-text-muted);
+      transition: all var(--transition-fast);
+    }
+
+    .contact-social a:hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+      background: var(--color-accent-dim);
+    }
+
+    .contact-social svg {
+      width: 18px;
+      height: 18px;
     }
 
     .form__select {
@@ -95,9 +161,9 @@
       -webkit-appearance: none;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23a0a0a0'%3E%3Cpath fill-rule='evenodd' d='M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z'/%3E%3C/svg%3E");
       background-repeat: no-repeat;
-      background-position: right 14px center;
+      background-position: right 12px center;
       background-size: 18px;
-      cursor: pointer;
+      padding-right: 40px;
     }
 
     .form__select:focus {
@@ -111,26 +177,36 @@
       color: var(--color-text-primary);
     }
 
-    /* ---------- Contact Info Sidebar ---------- */
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: var(--space-2xl);
+    .inquiry-types {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
     }
 
-    .contact-info__block {
+    @media (min-width: 480px) {
+      .inquiry-types {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .inquiry-type {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-md);
+      padding: var(--space-xl);
       background: var(--color-bg-card);
       border: 1px solid var(--color-border);
       border-radius: var(--border-radius);
-      padding: var(--space-xl);
-      transition: border-color var(--transition-base);
+      transition: all var(--transition-base);
     }
 
-    .contact-info__block:hover {
-      border-color: rgba(200, 164, 78, 0.25);
+    .inquiry-type:hover {
+      border-color: var(--color-accent);
+      box-shadow: var(--shadow-glow);
     }
 
-    .contact-info__icon {
+    .inquiry-type__icon {
+      flex-shrink: 0;
       width: 44px;
       height: 44px;
       display: flex;
@@ -139,280 +215,23 @@
       background: var(--color-accent-dim);
       border-radius: 10px;
       color: var(--color-accent);
-      margin-bottom: var(--space-md);
     }
 
-    .contact-info__icon svg {
+    .inquiry-type__icon svg {
       width: 22px;
       height: 22px;
     }
 
-    .contact-info__label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--color-text-muted);
-      margin-bottom: var(--space-xs);
-    }
-
-    .contact-info__value {
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--color-text-primary);
-      line-height: 1.5;
-    }
-
-    .contact-info__value a {
-      color: var(--color-text-primary);
-      transition: color var(--transition-fast);
-    }
-
-    .contact-info__value a:hover {
-      color: var(--color-accent);
-    }
-
-    /* ---------- Social Links ---------- */
-    .contact-social {
-      display: flex;
-      gap: var(--space-md);
-      margin-top: var(--space-sm);
-    }
-
-    .contact-social__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: 1px solid var(--color-border);
-      color: var(--color-text-secondary);
-      transition: all var(--transition-fast);
-    }
-
-    .contact-social__link:hover {
-      border-color: var(--color-accent);
-      color: var(--color-accent);
-      background: var(--color-accent-dim);
-    }
-
-    .contact-social__link svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    /* ---------- Response Time Badge ---------- */
-    .response-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 16px;
-      background: rgba(74, 222, 128, 0.08);
-      border: 1px solid rgba(74, 222, 128, 0.2);
-      border-radius: var(--border-radius-sm);
-      margin-top: var(--space-sm);
-    }
-
-    .response-badge__dot {
-      width: 8px;
-      height: 8px;
-      background: var(--color-success);
-      border-radius: 50%;
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    .response-badge__text {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--color-success);
-    }
-
-    /* ---------- "Before You Reach Out" Cards ---------- */
-    .welcome-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-lg);
-    }
-
-    @media (min-width: 480px) {
-      .welcome-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (min-width: 1024px) {
-      .welcome-grid {
-        grid-template-columns: repeat(4, 1fr);
-      }
-    }
-
-    .welcome-card {
-      background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: var(--border-radius);
-      padding: var(--space-xl);
-      transition: all var(--transition-base);
-    }
-
-    .welcome-card:hover {
-      border-color: var(--color-accent);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-glow);
-    }
-
-    .welcome-card__icon {
-      width: 48px;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--color-accent-dim);
-      border-radius: 12px;
-      color: var(--color-accent);
-      margin-bottom: var(--space-lg);
-    }
-
-    .welcome-card__icon svg {
-      width: 24px;
-      height: 24px;
-    }
-
-    .welcome-card__title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      margin-bottom: var(--space-sm);
-    }
-
-    .welcome-card__desc {
-      font-size: 0.85rem;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-    }
-
-    /* ---------- Map Placeholder ---------- */
-    .map-section {
-      position: relative;
-      background: var(--color-bg-elevated);
-      border-top: 1px solid var(--color-border);
-      border-bottom: 1px solid var(--color-border);
-      overflow: hidden;
-    }
-
-    .map-placeholder {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-2xl);
-      align-items: center;
-    }
-
-    @media (min-width: 768px) {
-      .map-placeholder {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .map-visual {
-      position: relative;
-      background: var(--color-bg-card);
-      border: 1px solid var(--color-border);
-      border-radius: var(--border-radius);
-      padding: var(--space-3xl) var(--space-xl);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 260px;
-      overflow: hidden;
-    }
-
-    .map-visual::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 30% 40%, rgba(200, 164, 78, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 70% 60%, rgba(200, 164, 78, 0.04) 0%, transparent 50%);
-      pointer-events: none;
-    }
-
-    .map-visual__content {
-      position: relative;
-      text-align: center;
-      z-index: 1;
-    }
-
-    .map-visual__icon {
-      width: 64px;
-      height: 64px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--color-accent-dim);
-      border-radius: 50%;
-      color: var(--color-accent);
-      margin: 0 auto var(--space-lg);
-    }
-
-    .map-visual__icon svg {
-      width: 32px;
-      height: 32px;
-    }
-
-    .map-visual__title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: var(--space-sm);
-    }
-
-    .map-visual__desc {
-      font-size: 0.9rem;
-      color: var(--color-text-secondary);
-      max-width: 30ch;
-      margin: 0 auto;
-    }
-
-    .map-details__item {
-      display: flex;
-      align-items: flex-start;
-      gap: var(--space-md);
-      padding: var(--space-lg) 0;
-      border-bottom: 1px solid var(--color-border);
-    }
-
-    .map-details__item:last-child {
-      border-bottom: none;
-    }
-
-    .map-details__icon {
-      flex-shrink: 0;
-      width: 36px;
-      height: 36px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: var(--color-accent-dim);
-      border-radius: 8px;
-      color: var(--color-accent);
-    }
-
-    .map-details__icon svg {
-      width: 18px;
-      height: 18px;
-    }
-
-    .map-details__label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--color-text-muted);
-      margin-bottom: 2px;
-    }
-
-    .map-details__value {
+    .inquiry-type__title {
       font-size: 0.95rem;
-      font-weight: 500;
+      font-weight: 700;
       color: var(--color-text-primary);
+      margin-bottom: 4px;
+    }
+
+    .inquiry-type__desc {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
       line-height: 1.5;
     }
   </style>
@@ -422,16 +241,23 @@
   {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact Chuck Ealy",
+    "name": "Contact Chuck Ealey",
+    "description": "Connect with Chuck Ealey for speaking engagements, Foundation partnerships, media interviews, and general inquiries.",
     "url": "https://chuckealy.com/contact.html",
-    "description": "Get in touch with Chuck Ealy for advisory, speaking engagements, partnerships, or strategic leadership conversations.",
     "mainEntity": {
       "@type": "Person",
-      "name": "Chuck Ealy",
+      "name": "Chuck Ealey",
       "url": "https://chuckealy.com",
-      "email": "chuck@chuckealy.com",
-      "jobTitle": "Builder, Operator & Strategic Leader",
-      "sameAs": []
+      "jobTitle": "Motivational Speaker, Philanthropist, Former Professional Quarterback",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Chuck Ealey Foundation",
+        "url": "https://undefeatedspirit.com"
+      },
+      "sameAs": [
+        "https://en.wikipedia.org/wiki/Chuck_Ealey",
+        "https://undefeatedspirit.com"
+      ]
     }
   }
   </script>
@@ -443,16 +269,16 @@
   <!-- Navigation -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="/" class="nav__brand" aria-label="Chuck Ealy Home">CHUCK<span>EALY</span></a>
+      <a href="/" class="nav__brand" aria-label="Chuck Ealey Home">CHUCK<span>EALEY</span></a>
 
       <div class="nav__links">
         <a href="/" class="nav__link">Home</a>
         <a href="story.html" class="nav__link">Story</a>
         <a href="impact.html" class="nav__link">Impact</a>
         <a href="timeline.html" class="nav__link">Timeline</a>
-        <a href="work.html" class="nav__link">Work</a>
+        <a href="work.html" class="nav__link">Foundation</a>
         <a href="press.html" class="nav__link">Press</a>
-        <a href="writing.html" class="nav__link">Writing</a>
+        <a href="writing.html" class="nav__link">Philosophy</a>
         <a href="contact.html" class="nav__link active">Contact</a>
       </div>
 
@@ -484,9 +310,9 @@
     <a href="story.html" class="mobile-nav__link">Story</a>
     <a href="impact.html" class="mobile-nav__link">Impact</a>
     <a href="timeline.html" class="mobile-nav__link">Timeline</a>
-    <a href="work.html" class="mobile-nav__link">Work</a>
+    <a href="work.html" class="mobile-nav__link">Foundation</a>
     <a href="press.html" class="mobile-nav__link">Press</a>
-    <a href="writing.html" class="mobile-nav__link">Writing</a>
+    <a href="writing.html" class="mobile-nav__link">Philosophy</a>
     <a href="contact.html" class="mobile-nav__link">Contact</a>
   </div>
 
@@ -497,161 +323,165 @@
     <section class="page-hero fade-in" aria-label="Page introduction">
       <div class="page-hero__content">
         <span class="label">Contact</span>
-        <h1>Let's Build Something <span class="text-gradient">Together</span></h1>
-        <p>Whether you have a strategic challenge, a partnership opportunity, or just want to start a conversation about building something that matters — I'm listening.</p>
+        <h1>Connect with<br><span class="text-gradient">Chuck Ealey</span></h1>
+        <p>Whether you are looking to book Chuck for a speaking engagement, explore a Foundation partnership, request a media interview, or simply share your story, we would love to hear from you.</p>
       </div>
     </section>
 
-    <!-- ===== CONTACT FORM + INFO ===== -->
+    <!-- ===== CONTACT FORM & INFO ===== -->
     <section class="section" aria-label="Contact form and information">
       <div class="container">
         <div class="contact-grid">
 
-          <!-- Left Column: Contact Form -->
+          <!-- LEFT: Contact Form -->
           <div class="fade-in-left">
-            <div class="contact-form">
-              <h2 class="contact-form__title">Send a Message</h2>
-              <p class="contact-form__subtitle">Fill out the form below and I'll get back to you promptly.</p>
+            <h2 style="font-size: 1.5rem; margin-bottom: var(--space-sm);">Send a Message</h2>
+            <p style="margin-bottom: var(--space-2xl); font-size: 0.95rem;">Fill out the form below and Chuck's team will respond within 48 hours.</p>
 
-              <form action="#" method="POST" aria-label="Contact form">
-                <div class="form__group">
-                  <label for="contact-name" class="form__label">Name</label>
-                  <input type="text" id="contact-name" name="name" class="form__input" placeholder="Your full name" required autocomplete="name">
-                </div>
+            <form action="#" method="POST" aria-label="Contact form">
+              <div class="form__group">
+                <label for="contact-name" class="form__label">Full Name <span style="color: var(--color-accent);">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form__input" placeholder="Your full name" required autocomplete="name">
+              </div>
 
-                <div class="form__group">
-                  <label for="contact-email" class="form__label">Email</label>
-                  <input type="email" id="contact-email" name="email" class="form__input" placeholder="you@example.com" required autocomplete="email">
-                </div>
+              <div class="form__group">
+                <label for="contact-email" class="form__label">Email Address <span style="color: var(--color-accent);">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form__input" placeholder="your@email.com" required autocomplete="email">
+              </div>
 
-                <div class="form__group">
-                  <label for="contact-subject" class="form__label">Subject</label>
-                  <select id="contact-subject" name="subject" class="form__select" required>
-                    <option value="" disabled selected>Select a topic</option>
-                    <option value="advisory">Advisory</option>
-                    <option value="speaking">Speaking</option>
-                    <option value="partnership">Partnership</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+              <div class="form__group">
+                <label for="contact-subject" class="form__label">Subject <span style="color: var(--color-accent);">*</span></label>
+                <select id="contact-subject" name="subject" class="form__select" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option value="speaking">Speaking Inquiry</option>
+                  <option value="foundation">Foundation</option>
+                  <option value="media">Media Request</option>
+                  <option value="general">General</option>
+                </select>
+              </div>
 
-                <div class="form__group">
-                  <label for="contact-message" class="form__label">Message</label>
-                  <textarea id="contact-message" name="message" class="form__textarea" placeholder="Tell me about what you're building, the challenge you're facing, or how I can help..." rows="6" required></textarea>
-                </div>
+              <div class="form__group">
+                <label for="contact-message" class="form__label">Message <span style="color: var(--color-accent);">*</span></label>
+                <textarea id="contact-message" name="message" class="form__textarea" placeholder="Tell us about your event, partnership idea, or inquiry..." rows="6" required></textarea>
+              </div>
 
-                <button type="submit" class="btn btn--primary">
-                  Send Message
-                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
-                </button>
-              </form>
-            </div>
+              <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;">
+                Send Message
+                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+              </button>
+            </form>
           </div>
 
-          <!-- Right Column: Contact Info -->
-          <div class="contact-info fade-in-right">
+          <!-- RIGHT: Contact Info -->
+          <div class="fade-in-right">
+            <div class="contact-info-card" style="margin-bottom: var(--space-xl);">
+              <h3>Contact Information</h3>
 
-            <!-- Email -->
-            <div class="contact-info__block">
-              <div class="contact-info__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/></svg>
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.497-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"/></svg>
+                </div>
+                <div class="contact-info-item__text">
+                  <div class="contact-info-item__label">Foundation Website</div>
+                  <div class="contact-info-item__value"><a href="https://undefeatedspirit.com" target="_blank" rel="noopener noreferrer">undefeatedspirit.com</a></div>
+                </div>
               </div>
-              <div class="contact-info__label">Email</div>
-              <div class="contact-info__value">
-                <a href="mailto:chuck@chuckealy.com">chuck@chuckealy.com</a>
-              </div>
-            </div>
 
-            <!-- Location -->
-            <div class="contact-info__block">
-              <div class="contact-info__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
+                </div>
+                <div class="contact-info-item__text">
+                  <div class="contact-info-item__label">Based In</div>
+                  <div class="contact-info-item__value">Toronto, Ontario, Canada</div>
+                </div>
               </div>
-              <div class="contact-info__label">Location</div>
-              <div class="contact-info__value">United States</div>
-            </div>
 
-            <!-- Social -->
-            <div class="contact-info__block">
-              <div class="contact-info__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"/></svg>
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
+                </div>
+                <div class="contact-info-item__text">
+                  <div class="contact-info-item__label">Response Time</div>
+                  <div class="contact-info-item__value">Within 48 hours</div>
+                </div>
               </div>
-              <div class="contact-info__label">Connect</div>
+
+              <div class="contact-info-item">
+                <div class="contact-info-item__icon">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+                </div>
+                <div class="contact-info-item__text">
+                  <div class="contact-info-item__label">Speaking Availability</div>
+                  <div class="contact-info-item__value">North America &mdash; in-person and virtual events</div>
+                </div>
+              </div>
+
+              <h4 style="font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-secondary); margin-top: var(--space-xl); margin-bottom: var(--space-md);">Follow Chuck</h4>
               <div class="contact-social">
-                <a href="#" class="contact-social__link" aria-label="LinkedIn">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                <a href="https://en.wikipedia.org/wiki/Chuck_Ealey" aria-label="Wikipedia" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l2.681-5.349-2.013-4.182c-.322-.659-.669-1.012-.939-1.071-.271-.06-.722-.09-1.055-.09-.186 0-.271-.048-.271-.144v-.468l.045-.053h4.86l.044.053v.468c0 .096-.09.144-.27.144-.45 0-.753.014-.907.043s-.217.144-.217.323c0 .18.09.42.27.726l1.7 3.471 1.835-3.545c.18-.36.27-.63.27-.826 0-.271-.188-.403-.563-.403h-.548c-.186 0-.279-.048-.279-.144v-.468l.046-.053c.876.005 3.727 0 3.727 0l.044.053v.468c0 .096-.09.144-.27.144-.346 0-.652.007-.917.045-.266.031-.546.181-.836.453s-.601.842-.934 1.558L14.07 12.5l2.49 5.047c.57 1.175 1.064 1.337 1.532.029l4.26-9.406c.27-.617.405-1.031.405-1.229 0-.283-.202-.413-.608-.436l-.69-.045c-.15 0-.225-.057-.225-.176v-.434l.052-.045s3.673.005 4.502 0l.052.045v.455c0 .084-.103.135-.312.159-.587.031-1.029.12-1.339.267-.308.15-.575.463-.801.937L16.9 18.847c-.405.874-.916 1.031-1.532-.029-.616-1.074-2.853-5.728-2.853-5.728l-2.537 5.063c-.508.944-.963 1.118-1.532.029L4.357 8.793c-.288-.564-.541-.957-.761-1.173-.218-.214-.551-.344-.998-.389l-.398-.038c-.186 0-.279-.045-.279-.135V6.62l.044-.045h5.37l.044.045v.438c0 .09-.092.135-.278.135-.6.019-.947.059-1.04.119-.094.06-.141.18-.141.36 0 .134.06.357.18.669l3.845 8.542 2.49-5.047z"/></svg>
                 </a>
-                <a href="#" class="contact-social__link" aria-label="Twitter / X">
-                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                <a href="https://undefeatedspirit.com" aria-label="Undefeated Spirit Foundation" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
                 </a>
               </div>
             </div>
-
-            <!-- Response Time -->
-            <div class="contact-info__block">
-              <div class="contact-info__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-              </div>
-              <div class="contact-info__label">Response Time</div>
-              <div class="response-badge">
-                <span class="response-badge__dot"></span>
-                <span class="response-badge__text">Typically within 48 hours</span>
-              </div>
-            </div>
-
           </div>
 
         </div>
       </div>
     </section>
 
-    <!-- ===== BEFORE YOU REACH OUT ===== -->
-    <section class="section" aria-label="Types of conversations welcome">
+    <!-- ===== TYPES OF INQUIRIES ===== -->
+    <section class="section stories" aria-label="Types of inquiries">
       <div class="container">
         <div class="section-header section-header--center fade-in">
-          <span class="label">What to Expect</span>
-          <h2>Before You Reach Out</h2>
-          <p>Here are the types of conversations I'm most energized by. If your challenge fits one of these, let's talk.</p>
+          <span class="label">How Can We Help?</span>
+          <h2>Types of Inquiries</h2>
+          <p>Chuck and his team welcome inquiries across a range of areas. Select the category that best fits your needs when reaching out.</p>
         </div>
 
-        <div class="welcome-grid stagger-children">
-
-          <!-- Card 1: Strategic Challenges -->
-          <div class="welcome-card">
-            <div class="welcome-card__icon">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"/></svg>
+        <div class="inquiry-types stagger-children">
+          <div class="inquiry-type">
+            <div class="inquiry-type__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
             </div>
-            <h3 class="welcome-card__title">Strategic Challenges</h3>
-            <p class="welcome-card__desc">You have a complex operational or strategic problem that needs someone who has been in the trenches. Let's map it out together.</p>
+            <div>
+              <div class="inquiry-type__title">Speaking Bookings</div>
+              <p class="inquiry-type__desc">Keynotes, school assemblies, corporate events, community fundraisers, and private engagements. Chuck is available across North America for in-person and virtual events.</p>
+            </div>
           </div>
 
-          <!-- Card 2: Speaking & Events -->
-          <div class="welcome-card">
-            <div class="welcome-card__icon">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 3a1 1 0 00-1.447-.894L8.763 6H5a3 3 0 000 6h.28l1.771 5.316A1 1 0 008 18h1a1 1 0 001-1v-4.382l6.553 3.276A1 1 0 0018 15V3z" clip-rule="evenodd"/></svg>
+          <div class="inquiry-type">
+            <div class="inquiry-type__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
             </div>
-            <h3 class="welcome-card__title">Speaking & Events</h3>
-            <p class="welcome-card__desc">Looking for a speaker who delivers substance over slides? I talk about leadership, operations, and building things that ship.</p>
+            <div>
+              <div class="inquiry-type__title">Foundation Partnerships</div>
+              <p class="inquiry-type__desc">Sponsor an Undefeated Spirit Award, partner on a youth mentorship program, or support the Foundation's mission through corporate or individual contributions.</p>
+            </div>
           </div>
 
-          <!-- Card 3: Partnerships -->
-          <div class="welcome-card">
-            <div class="welcome-card__icon">
-              <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/><path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"/></svg>
+          <div class="inquiry-type">
+            <div class="inquiry-type__icon">
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"/><path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"/></svg>
             </div>
-            <h3 class="welcome-card__title">Partnership Builds</h3>
-            <p class="welcome-card__desc">If you are building something meaningful and need a hands-on partner who brings operational rigor and strategic clarity, I'm interested.</p>
+            <div>
+              <div class="inquiry-type__title">Media Interviews</div>
+              <p class="inquiry-type__desc">Press inquiries, interview requests, documentary licensing, podcast appearances, and media partnerships. Chuck is available for television, radio, print, and digital media.</p>
+            </div>
           </div>
 
-          <!-- Card 4: Honest Conversations -->
-          <div class="welcome-card">
-            <div class="welcome-card__icon">
+          <div class="inquiry-type">
+            <div class="inquiry-type__icon">
               <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clip-rule="evenodd"/></svg>
             </div>
-            <h3 class="welcome-card__title">Honest Conversations</h3>
-            <p class="welcome-card__desc">Sometimes you just need a straight-talking sounding board. No pitch required. If the conversation has substance, I'm in.</p>
+            <div>
+              <div class="inquiry-type__title">General Inquiries</div>
+              <p class="inquiry-type__desc">Personal messages, fan mail, collaboration ideas, or anything else. Chuck values every connection and his team reviews all correspondence personally.</p>
+            </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -660,72 +490,9 @@
     <section class="quote-section fade-in" aria-label="Quote">
       <div class="container container--narrow">
         <blockquote>
-          <p class="quote__text">"The best partnerships start with a single honest conversation. No decks. No posturing. Just two people figuring out if they can build something real."</p>
-          <footer class="quote__attribution">— <strong>Chuck Ealy</strong></footer>
+          <p class="quote__text">&ldquo;If you believe in yourself, regardless of circumstances, you can achieve anything.&rdquo;</p>
+          <footer class="quote__attribution">&mdash; <strong>Chuck Ealey</strong></footer>
         </blockquote>
-      </div>
-    </section>
-
-    <!-- ===== MAP / ADDITIONAL INFO SECTION ===== -->
-    <section class="section map-section fade-in" aria-label="Location and availability">
-      <div class="container">
-        <div class="map-placeholder">
-
-          <!-- Map Visual Placeholder -->
-          <div class="map-visual">
-            <div class="map-visual__content">
-              <div class="map-visual__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/></svg>
-              </div>
-              <h3 class="map-visual__title">Based in the United States</h3>
-              <p class="map-visual__desc">Available for remote engagements worldwide and in-person meetings by arrangement.</p>
-            </div>
-          </div>
-
-          <!-- Additional Details -->
-          <div>
-            <div class="map-details__item">
-              <div class="map-details__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <div class="map-details__label">Availability</div>
-                <div class="map-details__value">Open to select advisory and partnership engagements</div>
-              </div>
-            </div>
-
-            <div class="map-details__item">
-              <div class="map-details__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.497-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <div class="map-details__label">Working Style</div>
-                <div class="map-details__value">Remote-first with a global perspective. Timezone-flexible.</div>
-              </div>
-            </div>
-
-            <div class="map-details__item">
-              <div class="map-details__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <div class="map-details__label">Preferred Format</div>
-                <div class="map-details__value">Start with an email or the form above. If there is a fit, we will schedule a call.</div>
-              </div>
-            </div>
-
-            <div class="map-details__item">
-              <div class="map-details__icon">
-                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              </div>
-              <div>
-                <div class="map-details__label">Confidentiality</div>
-                <div class="map-details__value">All conversations are treated with discretion. Your information stays private.</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
     </section>
 
@@ -735,8 +502,8 @@
   <footer class="footer" role="contentinfo">
     <div class="footer__inner">
       <div class="footer__brand">
-        <div class="footer__brand-name">CHUCK<span>EALY</span></div>
-        <p class="footer__brand-desc">Builder. Operator. Leader who ships. A living archive of measurable impact and strategic leadership.</p>
+        <div class="footer__brand-name">CHUCK<span>EALEY</span></div>
+        <p class="footer__brand-desc">The greatest undefeated quarterback in football history. 35-0 at Toledo. Grey Cup Champion. College Football Hall of Fame. Carrying the Undefeated Spirit forward.</p>
       </div>
 
       <div class="footer__nav">
@@ -744,13 +511,13 @@
         <a href="story.html">Story</a>
         <a href="impact.html">Impact</a>
         <a href="timeline.html">Timeline</a>
-        <a href="work.html">Work</a>
+        <a href="work.html">Foundation</a>
       </div>
 
       <div class="footer__nav">
         <h4>More</h4>
         <a href="press.html">Press</a>
-        <a href="writing.html">Writing</a>
+        <a href="writing.html">Philosophy</a>
         <a href="contact.html">Contact</a>
       </div>
 
@@ -763,13 +530,10 @@
     </div>
 
     <div class="footer__bottom">
-      <p class="footer__copyright">&copy; 2026 Chuck Ealy. All rights reserved.</p>
+      <p class="footer__copyright">&copy; 2026 Chuck Ealey. All rights reserved. | <a href="https://undefeatedspirit.com">undefeatedspirit.com</a></p>
       <div class="footer__social">
-        <a href="#" aria-label="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="#" aria-label="Twitter / X">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <a href="https://en.wikipedia.org/wiki/Chuck_Ealey" aria-label="Wikipedia">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.09 13.119c-.936 1.932-2.217 4.548-2.853 5.728-.616 1.074-1.127.931-1.532.029-1.406-3.321-4.293-9.144-5.651-12.409-.251-.601-.441-.987-.619-1.139-.181-.15-.554-.24-1.122-.271C.103 5.033 0 4.982 0 4.898v-.455l.052-.045c.924-.005 5.401 0 5.401 0l.051.045v.434c0 .119-.075.176-.225.176l-.564.031c-.485.029-.727.164-.727.436 0 .135.053.33.166.601 1.082 2.646 4.818 10.521 4.818 10.521l2.681-5.349-2.013-4.182c-.322-.659-.669-1.012-.939-1.071-.271-.06-.722-.09-1.055-.09-.186 0-.271-.048-.271-.144v-.468l.045-.053h4.86l.044.053v.468c0 .096-.09.144-.27.144-.45 0-.753.014-.907.043s-.217.144-.217.323c0 .18.09.42.27.726l1.7 3.471 1.835-3.545c.18-.36.27-.63.27-.826 0-.271-.188-.403-.563-.403h-.548c-.186 0-.279-.048-.279-.144v-.468l.046-.053c.876.005 3.727 0 3.727 0l.044.053v.468c0 .096-.09.144-.27.144-.346 0-.652.007-.917.045-.266.031-.546.181-.836.453s-.601.842-.934 1.558L14.07 12.5l2.49 5.047c.57 1.175 1.064 1.337 1.532.029l4.26-9.406c.27-.617.405-1.031.405-1.229 0-.283-.202-.413-.608-.436l-.69-.045c-.15 0-.225-.057-.225-.176v-.434l.052-.045s3.673.005 4.502 0l.052.045v.455c0 .084-.103.135-.312.159-.587.031-1.029.12-1.339.267-.308.15-.575.463-.801.937L16.9 18.847c-.405.874-.916 1.031-1.532-.029-.616-1.074-2.853-5.728-2.853-5.728l-2.537 5.063c-.508.944-.963 1.118-1.532.029L4.357 8.793c-.288-.564-.541-.957-.761-1.173-.218-.214-.551-.344-.998-.389l-.398-.038c-.186 0-.279-.045-.279-.135V6.62l.044-.045h5.37l.044.045v.438c0 .09-.092.135-.278.135-.6.019-.947.059-1.04.119-.094.06-.141.18-.141.36 0 .134.06.357.18.669l3.845 8.542 2.49-5.047z"/></svg>
         </a>
       </div>
     </div>
